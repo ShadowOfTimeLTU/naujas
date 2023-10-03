@@ -2,7 +2,6 @@ from datetime import datetime
 from sqlalchemy import Column, Text, Integer, String, Float, Boolean, DateTime
 from sqlalchemy.ext.declarative import declarative_base
 
-# engine = create_engine('sqlite:///projektai.db')
 
 Base = declarative_base()
 
@@ -25,5 +24,3 @@ class Projektas(Base):
     def __repr__(self):
         return f"{self.id} {self.name} - {self.price}: {self.create_date}"
 
-
-# Base.metadata.create_all(engine)
